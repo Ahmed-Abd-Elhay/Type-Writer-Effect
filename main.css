@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+p {
+    color: white;
+    font-size: 31px;
+    margin: 70px auto;
+    width: 0px;
+    overflow: hidden;
+    border-right: 1px solid #ffffffbd;
+    white-space: nowrap;
+    animation: type-right 3s 2s steps(21) both, blink 0.5s infinite;
+}
+
+@keyframes type-right {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 302px;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-right-color: #ffffffbd;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
